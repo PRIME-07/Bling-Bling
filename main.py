@@ -44,6 +44,7 @@ def print_slot_machine(columns):
                 print(column[row], end=" | ")
             else:
                 print(column[row], end="")
+        print()
 
 
 
