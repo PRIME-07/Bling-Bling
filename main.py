@@ -41,9 +41,9 @@ def print_slot_machine(columns):
     for row in range (len(columns[0])):
         for i, column in enumerate(columns):
             if i != len(columns) - 1:
-                print(column[row], "|")
+                print(column[row], end=" | ")
             else:
-                print(column[row])
+                print(column[row], end="")
 
 
 
@@ -107,5 +107,7 @@ def main():
             extra = total_bet - balance
             print(f"Not sufficient balance. Your bet exceeds account balance by {extra}")
 
+    slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
+    print_slot_machine(slots)
 
 main()
