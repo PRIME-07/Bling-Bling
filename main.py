@@ -9,11 +9,11 @@ ROWS = 3
 COLS = 3
 
 symbol_count = {
-    "A": 3,
-    "B": 6,
-    "C": 8,
-    "D": 10,
-    "$": 1
+    "A": 6,
+    "B": 12,
+    "C": 16,
+    "D": 20,
+    "$": 3
 }
 
 symbol_value = {
@@ -140,13 +140,13 @@ def main():
     balance = deposit()
     while True:
         print(f"Current balance is ${balance} ")
-        answer = input("Press A key to add balance, press enter to play. Press Q key to quit.")
+        answer = input("Press A key to add balance, press ENTER key to play. Press Q key to quit.")
         if answer == "a":
             add_bal = int(input("Enter amount to add to balance: $"))
             balance += add_bal
             print(f"Current balance is {balance}")
         if answer == "q":
-            print("Game ended. Thanks for playing!")
+            print("Game ended! Thanks for playing!")
             break
         balance += spin(balance)
     print(f"You are left with ${balance}")
