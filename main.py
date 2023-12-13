@@ -140,10 +140,15 @@ def main():
     balance = deposit()
     while True:
         print(f"Current balance is ${balance} ")
-        answer = input("Press enter to play. Press Q key to quit.")
+        answer = input("Press A key to add balance, press enter to play. Press Q key to quit.")
+        if answer == "a":
+            add_bal = int(input("Enter amount to add to balance: $"))
+            balance += add_bal
+            print(f"Current balance is {balance}")
         if answer == "q":
+            print("Game ended. Thanks for playing!")
             break
-        balance += spin()
+        balance += spin(balance)
     print(f"You are left with ${balance}")
 
 main()
