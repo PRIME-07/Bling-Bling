@@ -151,4 +151,5 @@ def main():
         balance += spin(balance)
     print(f"You are left with ${balance}")
 
+
 main()
