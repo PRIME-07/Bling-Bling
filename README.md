@@ -44,14 +44,14 @@ This documentation provides an overview of the Slot Machine game implemented in 
 - The `get_bet` function prompts the user to input the amount to bet on each line.
 
 ### 3.3 Adding Balance <a name="adding-balance"></a>
-- Players can add balance by pressing the 'A' key and entering the amount they want to add.
+- Players can add balance by pressing the <kbd>A<kbd> key and entering the amount they want to add.
 
 ### 3.4 Quitting the Game <a name="quitting-the-game"></a>
-- Players can quit the game by pressing the 'Q' key.
+- Players can quit the game by pressing the <kbd>Q<kbd> key.
 
 ## 4. Main Function <a name="main-function"></a>
 - The `main` function serves as the entry point for the game.
 - It allows players to deposit money, view their balance, add balance, and play the slot machine until they choose to quit.
 
 ## 5. Conclusion <a name="conclusion"></a>
-The Slot Machine game implemented in Python provides a simple yet interactive gambling experience. Players can deposit money, place bets on multiple lines, spin the reels, and potentially win rewards based on the combinations. Feel free to customize the game further or enhance its features.
+This is the simplest version of slot machine implemented in python. Players can deposit money, place bets on multiple lines, spin the reels, and potentially win rewards based on the combinations. Feel free to customize the game further or enhance its features.
